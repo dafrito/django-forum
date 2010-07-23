@@ -30,6 +30,12 @@ setup(
     url='http://code.google.com/p/django-forum/',
     license='BSD',
     packages=find_packages(),
+    package_data={'forum':[
+        'templates/*.html',
+        'templates/forum/*.html',
+        'templates/forum/feeds/*.html',
+        'templates/forum/feeds/*.txt',
+    ]},
     include_package_data=True,
     zip_safe=False,
     install_requires=['setuptools'],
